@@ -3,11 +3,11 @@ import { Directions, Direction } from "./styles";
 const DirectionSelector = ({ setDirection = () => {} }) => (
   <Directions>
     <Direction
-      onClick={() => setDirection("Row")}
+      onClick={() => setDirection("row")}
       src="DoubleArrowLeftRight-512.webp"
     />
     <Direction
-      onClick={() => setDirection("Column")}
+      onClick={() => setDirection("column")}
       src="751136_multimedia_512x512.png"
     />
   </Directions>

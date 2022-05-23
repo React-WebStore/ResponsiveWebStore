@@ -5,9 +5,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  transition: 2s;
 `;
 
-export const Row = styled.div`
+export const Direction = styled.div`
+  ${({ direction }) => {
+    return direction === "row"
+      ? `{
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -18,11 +22,12 @@ export const Row = styled.div`
     max-height: 30rem;
     max-width: 30rem;
   }
-`;
-
-export const Column = styled.div`
+}`
+      : `{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
   overflow: scroll;
+}`;
+  }}
 `;
