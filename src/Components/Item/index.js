@@ -1,9 +1,13 @@
 import React from "react";
 import { ItemContainer, Image, TextBox } from "./styles";
 
-const Item = ({ img = "", title = "title", price = 10 }) => (
+const Item = ({
+  img = "2016-09-06-what-is-a-product.webp",
+  title = "title",
+  price = 10,
+}) => (
   <ItemContainer>
-    <Image src={"2016-09-06-what-is-a-product.webp"}></Image>
+    <Image src={img}></Image>
     <TextBox>
       <h1>{title}</h1>
       <h3>${price}</h3>

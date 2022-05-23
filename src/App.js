@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Item from "./Components/Item";
 import DirectionSelector from "./Components/DirectionSelector";
+import Cart from "./Components/Cart";
 
-import { Wrapper, Row, Column } from "./styles";
+import { Wrapper, Direction } from "./styles";
 const App = () => {
-  const [direction, setDirection] = useState("Column");
+  const [direction, setDirection] = useState("column");
 
   const items = new Array(50);
 
@@ -14,12 +15,9 @@ const App = () => {
   console.log(direction);
   return (
     <Wrapper>
+      <Cart />
       <DirectionSelector setDirection={setDirection} />
-      {direction === "Row" ? (
-        <Row>{items.map((item) => item)}</Row>
-      ) : (
-        <Column>{items.map((item) => item)}</Column>
-      )}
+      <Direction direction={direction}>{items.map((item) => item)}</Direction>
     </Wrapper>
   );
 };
