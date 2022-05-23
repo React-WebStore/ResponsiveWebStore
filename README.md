@@ -1,4 +1,4 @@
-#React Responsive Web Store
+# React Responsive Web Store
 
 Hi reader,
 
