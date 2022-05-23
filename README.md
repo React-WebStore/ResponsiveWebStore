@@ -16,6 +16,17 @@ Keep track of your inventory and see reviews on your products from several diffe
 This sounds like a lot, therefor I want to start with a simple responsive and integrable NPM package for React user to build out there one stop shop
 Start conquering the ecommerce world with React.
 
+# Access
+
+If you would like access to contribute to this repository please email luc.van.kerkvoort@gmail.com and 
+I will add you to the contributors list as soon as possible.
+
+
+# Trello Board
+
+I have created a Trello board with a backlog [here](https://trello.com/b/o1ygQeAq/responsive-web-store)
+To get access please email me at luc.van.kerkvoort@gmail.com
+
 ## Available Scripts
 
 In the project directory, you can run:
