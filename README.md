@@ -27,6 +27,37 @@ I will add you to the contributors list as soon as possible.
 I have created a Trello board with a backlog [here](https://trello.com/b/o1ygQeAq/responsive-web-store)
 To get access please email me at luc.van.kerkvoort@gmail.com
 
+After that you can pick up any tickets and start working on them.
+
+# Figma
+For designs I will be 
+
+# Working on the project
+
+To get started you will have to clone the repo to your local machine.
+
+I have setup the project so that we are unable to merge into master directly.
+If you want to contribute you will have to create a new branch.
+We are using trunk based development methodology which uses git rebase which reapplies your commits onto the master branch.
+This way we iterate with small changes to the repository securing the codebase.
+
+if you want to read more about trunk based development, [here](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development#:~:text=What%20is%20trunk%2Dbased%20development,streamlines%20merging%20and%20integration%20phases.) is an article explaining it in depth
+
+I've utilized styled-components for the CSS, this makes it easier to integrate JavaScript into our CSS.
+It makes it more secure since the classnames will be auto generated and we can reuse components easier.
+
+The file structure is as follows:
+
+```
+Components -- ComponentName -- index.js
+                            -- styles.js
+```
+Please stick to the convention to have to codebase be as holistic as possible.
+
+We have a Utils folder which is used for Hooks.
+If you feel like any code is being reused anywhere to many times we can create a hook for it to keep our codebase DRY
+The same goes for CSS code, we have a folder named Styles that is utilized for the purpose of reusable CSS code.
+
 ## Available Scripts
 
 In the project directory, you can run:
