@@ -30,7 +30,9 @@ To get access please email me at luc.van.kerkvoort@gmail.com
 After that you can pick up any tickets and start working on them.
 
 # Figma
-For designs I will be 
+
+For designs I will be utilizing Figma.
+The figma page can be found [here](https://www.figma.com/file/2CXfAGfyjYMwax4OYT0i0C/Admin-Dashboard?node-id=0%3A1)
 
 # Working on the project
 
