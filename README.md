@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+#React Responsive Web Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi reader,
+
+I have created this repository because I have been developing web stores for the past 3 years.
+I've never found a great NPM package for running a utilizing React.
+I know there are propably a million other tools for creating a webstore but I wanted to create one 
+that can be integrated with any stack.
+
+A single package that provides you a database to store your items, an analytics dashboard and a one stop shop for your webstore.
+
+The idea is to have a shippable NPM package for a store, an admin portal with analytics showing you which products are the best sellers, 
+integration with major website like Amazon, Ebay, FB marketplace so you can push out products to all of your channels at the same time.
+Keep track of your inventory and see reviews on your products from several different sources.
+
+This sounds like a lot, therefor I want to start with a simple responsive and integrable NPM package for React user to build out there one stop shop
+Start conquering the ecommerce world with React.
 
 ## Available Scripts
 
