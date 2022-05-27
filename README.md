@@ -18,7 +18,7 @@ Start conquering the ecommerce world with React.
 
 # Access
 
-If you would like access to contribute to this repository please email luc.van.kerkvoort@gmail.com and 
+If you would like access to contribute to this repository please join the discord channel [RWS](https://discord.gg/NAZzpTDq) and 
 I will add you to the contributors list as soon as possible.
 
 
@@ -28,11 +28,6 @@ I have created a Trello board with a backlog [here](https://trello.com/b/o1ygQeA
 To get access please email me at luc.van.kerkvoort@gmail.com
 
 After that you can pick up any tickets and start working on them.
-
-# Figma
-
-For designs I will be utilizing Figma.
-The figma page can be found [here](https://www.figma.com/file/2CXfAGfyjYMwax4OYT0i0C/Admin-Dashboard?node-id=0%3A1)
 
 # Working on the project
 
