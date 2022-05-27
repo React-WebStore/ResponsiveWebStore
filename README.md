@@ -3,7 +3,7 @@
 Hi reader,
 
 I have created this repository because I have been developing web stores for the past 3 years.
-I've never found a great NPM package for running a utilizing React.
+I've never found a great NPM package for running a store utilizing React.
 I know there are propably a million other tools for creating a webstore but I wanted to create one 
 that can be integrated with any stack.
 
