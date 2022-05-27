@@ -25,7 +25,7 @@ I will add you to the contributors list as soon as possible.
 # Trello Board
 
 I have created a Trello board with a backlog [here](https://trello.com/b/o1ygQeAq/responsive-web-store)
-To get access please email me at luc.van.kerkvoort@gmail.com
+To get access please use the Discord channel to reach out [RWS](https://discord.gg/NAZzpTDq)
 
 After that you can pick up any tickets and start working on them.
 
