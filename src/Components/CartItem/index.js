@@ -6,7 +6,7 @@ const CartItem = ({
   img = "2016-09-06-what-is-a-product.webp",
 }) => (
   <CartItemContainer>
-    <CartImage src={img} />
+    <CartImage src={img} alt="item" />
     <CartText>
       <h1>{title}</h1>
       <h3>${price}</h3>

@@ -34,6 +34,7 @@ const analytics = getAnalytics(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
 
+console.log(db);
 // const auth = getAuth(app);
 
 // export const firebaseAuth = () => ({
