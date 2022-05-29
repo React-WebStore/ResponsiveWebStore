@@ -6,7 +6,7 @@ export const CartContainer = styled.div`
   left: 1rem;
   display: grid;
   background: white;
-  max-height: 50rem;
+  max-height: 30rem;
   gap: 1rem;
   padding: 0.7rem;
   border-radius: 0.5rem;
