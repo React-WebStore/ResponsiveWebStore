@@ -19,4 +19,5 @@ export const CartHeader = styled.div`
   flex-direction: column;
   cursor: pointer;
   text-align: center;
+  transition: 2s;
 `;
