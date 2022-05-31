@@ -8,16 +8,19 @@ export const StateProvider = ({ children }) => {
   const [state, dispatch] = useReducer((state, action) => {
     switch (action.type) {
       case "initializeInventory":
-        action.payload.forEach((item) => (item.uuid = uuidv4()));
+        const items = action.payload.map((item) => ({
+          ...item,
+          uuid: uuidv4(),
+        }));
 
         return Object.assign({}, state, {
-          items: action.payload,
+          items,
         });
       case "dumpInventory":
         return Object.assign({}, state, initialState);
       case "addToCart":
         return Object.assign({}, state, {
-          cart: [...state.cart, action.payload],
+          cart: action.payload,
         });
       case "removeFromCart":
         return Object.assign({}, state, {
@@ -28,5 +31,5 @@ export const StateProvider = ({ children }) => {
     }
   }, initialState);
 
-  return <Provider value={{ state, dispatch }}>{children}</Provider>;
+  return <Provider value={{ ...state, dispatch }}>{children}</Provider>;
 };

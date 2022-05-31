@@ -11,11 +11,25 @@ const Item = ({
   const store = useContext(contextState);
 
   const addToCart = (key) => {
-    const { items } = store.state;
+    const { items, cart } = store;
     const itemToAdd = items.find((item) => item.uuid === key);
+    let newCart = cart;
 
-    store.dispatch({ type: "addToCart", payload: itemToAdd });
+    if (cart.some((item) => item.uuid === key)) {
+      newCart = cart.map((item) => {
+        if (item.uuid === key) {
+          item.quantity = item.quantity + 1;
+        }
+        return item;
+      });
+    } else {
+      itemToAdd.quantity = 1;
+      newCart.push(itemToAdd);
+    }
+
+    return store.dispatch({ type: "addToCart", payload: newCart });
   };
+
   return (
     <ItemContainer>
       <Image src={img}></Image>

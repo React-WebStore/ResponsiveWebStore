@@ -6,8 +6,9 @@ import CartItem from "../CartItem";
 const Cart = () => {
   const [isOpen, setOpen] = useState(false);
 
-  const { state } = useContext(contextState);
-  const { cart } = state;
+  const store = useContext(contextState);
+  const { cart } = store;
+
   return (
     <CartContainer>
       <CartHeader onClick={() => setOpen(!isOpen)}>

@@ -7,12 +7,7 @@ import { Wrapper, Direction } from "./styles";
 const App = ({ inventory }) => {
   const [direction, setDirection] = useState("column");
   const store = useContext(contextState);
-  console.log({ store });
-  const { items } = store.state;
-  console.log({ items });
-
-  console.log(items);
-  console.log(direction);
+  const { items } = store;
 
   useEffect(() => {
     // testing purposes only
