@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { contextState } from "../../Services/context";
+import Quantity from "../Quantity";
 import { CartItemContainer, CartText, CartImage, Remove } from "./styles";
 const CartItem = ({
   title = "title",
@@ -20,7 +21,7 @@ const CartItem = ({
       <CartText>
         <h1>{title}</h1>
         <h3>${price}</h3>
-        <h3>{quantity}</h3>
+        <Quantity quantity={quantity} uuid={uuid} />
       </CartText>
     </CartItemContainer>
   );

@@ -27,3 +27,7 @@ export const Remove = styled.div`
   height: 20px;
   cursor: pointer;
 `;
+
+export const Quantity = styled.div`
+  display: flex;
+`;
