@@ -15,9 +15,15 @@ export const CartContainer = styled.div`
 `;
 
 export const CartHeader = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   text-align: center;
   transition: 2s;
+`;
+
+export const CartQuantity = styled.div`
+  position: absolute;
+  background: red;
 `;

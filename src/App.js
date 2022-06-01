@@ -12,7 +12,7 @@ const App = ({ inventory }) => {
   useEffect(() => {
     // testing purposes only
     const arr = new Array(50);
-    arr.fill({ title: "patrick", price: 15000, img: "cart.png" });
+    arr.fill({ title: "patrick", price: 15000, img: "logo512.png" });
 
     store.dispatch({ type: "initializeInventory", payload: inventory || arr });
 

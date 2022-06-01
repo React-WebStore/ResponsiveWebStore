@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ItemContainer, Image, TextBox } from "./styles";
+import { ItemContainer, Image, TextBox, AddToCart } from "./styles";
 
 import { contextState } from "../../Services/context";
 const Item = ({
@@ -36,7 +36,7 @@ const Item = ({
       <TextBox>
         <h1>{title}</h1>
         <h3>${price}</h3>
-        <button onClick={() => addToCart(uuid)}>Add To Cart</button>
+        <AddToCart onClick={() => addToCart(uuid)} />
       </TextBox>
     </ItemContainer>
   );

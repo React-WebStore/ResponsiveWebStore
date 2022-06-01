@@ -17,3 +17,13 @@ export const Image = styled.img`
   min-width: 10rem;
   margin: 0.5rem;
 `;
+
+export const AddToCart = styled.div`
+  width: 50px;
+  height: 25px;
+  background-image: url("addToCart.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+`;

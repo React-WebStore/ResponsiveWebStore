@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { CartContainer, CartHeader } from "./styles";
 
 import { contextState } from "../../Services/context";
@@ -9,6 +9,20 @@ const Cart = () => {
   const store = useContext(contextState);
   const { cart } = store;
 
+  console.log(cart.length);
+
+  const scrollToBottom = (e, element) => {
+    if (e.path.includes(element)) return;
+    return element.scroll({ top: element.scrollHeight, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    const element = document.getElementsByClassName("sc-gKXOVf eGOJaV")[0];
+    window.addEventListener("click", (e) => scrollToBottom(e, element));
+    return window.removeEventListener("click", (e) =>
+      scrollToBottom(e, element)
+    );
+  });
   return (
     <CartContainer>
       <CartHeader onClick={() => setOpen(!isOpen)}>

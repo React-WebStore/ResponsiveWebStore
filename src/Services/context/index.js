@@ -23,7 +23,6 @@ export const StateProvider = ({ children }) => {
           cart: action.payload,
         });
       case "removeFromCart":
-        console.log(action.payload);
         return Object.assign({}, state, {
           cart: state.cart.filter((item) => item.uuid !== action.payload),
         });
