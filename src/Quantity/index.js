@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { QuantityContainer, Button } from "./styles";
-import { contextState } from "../../Services/context";
+import { contextState } from "../Services/context";
 const Quantity = ({ quantity, uuid }) => {
   const store = useContext(contextState);
   const { cart, dispatch } = store;
