@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save responsive-store-react
+npm install --save responsive-web-store
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save responsive-store-react
 ```jsx
 import React from 'react'
 
-import Store, { Cart } from 'responsive-store-react'
+import Store, { Cart } from 'responsive-web-store'
 
 const MyStore = () => ()
     <div>
